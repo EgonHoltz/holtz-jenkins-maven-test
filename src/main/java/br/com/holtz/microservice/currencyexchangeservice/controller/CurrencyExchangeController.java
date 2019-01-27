@@ -20,6 +20,7 @@ public class CurrencyExchangeController {
 	@Autowired
 	private ExchangeValueRepository eValueRep;
 	
+	//The only URI of controller
 	@GetMapping("/currency-exchange/from/{from}/to/{to}")
 	public ExchangeValue retrieveExchangeValue(@PathVariable String from, @PathVariable String to) {
 		
